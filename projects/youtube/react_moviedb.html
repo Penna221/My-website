@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReactJS Movie DB App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <header>
+        <h1>Coding challenges #3 ReactJS Movie DB App</h1>
+        <p>
+          In this project i used ReactJS to create a simple site that can search
+          movies via <b>public API</b>.
+        </p>
+      </header>
+      <main>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/F5fzjSlwc90"
+          title="React.js Movie DB App (public API) - Koodaus Haasteet Osa 3"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>What i learned</h2>
+        <p>I learned the basics of React and using API's once again.</p>
+      </main>
+      <footer>
+        You can checkout my code from GitHub using this
+        <a href="https://github.com/Penna221/React_Movie_project">link</a>.
+      </footer>
+    </div>
+  </body>
+</html>

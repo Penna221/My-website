@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  color: #f2f2f2;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(10, 10, 10);
+  text-align: center;
+  color: #f2f2f2; /* Text color of the links */
+  font-size: large;
+}
+.navlinks a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a:visited {
+  color: #f2f2f2;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.navbar a:hover {
+  background-color: #ddd; /* Background color of the links on hover */
+  color: black; /* Text color of the links on hover */
+}
+a {
+  color: #d7f7ff;
+}
+b {
+  color: aqua;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+ul:before {
+  content: attr(aria-label);
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: -15px;
+  color: greenyellow;
+}
+li {
+  list-style: none;
+}
+li::before {
+  content: "\00BB";
+  color: greenyellow;
+}
+h1 {
+  color: gold;
+}
+h2 {
+  color: gold;
+}
+code {
+  display: block;
+  color: black;
+  background-color: greenyellow;
+  padding: 1%;
+}
+.error {
+  color: red;
+}
+.done::after {
+  content: "\2705";
+  color: greenyellow;
+}

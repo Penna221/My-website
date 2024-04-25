@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Game</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <header>
+        <h1>2D Game</h1>
+        <p><i>Disclaimer: This project is currently on hold.</i></p>
+        <a href="https://github.com/Penna221/2DGame">GitHub project</a>
+      </header>
+      <main>
+        <p>
+          This project is supposed to be a 2D topdown game. The idea is was too
+          big for the time, so it was put on hold. I plan on continuing this
+          project at somepoint.
+        </p>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

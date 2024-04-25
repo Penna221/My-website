@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <header>
+        <h1>Hi there! I'm Juho Pennanen.</h1>
+        <img src="/about/rajattu.jpg" width="30%" class="center" />
+      </header>
+
+      <main width="50%">
+        <section>
+          <h2>Who Am I?</h2>
+          <p>
+            I'm a finnish <b>programmer</b> with a passion for
+            <b>content creation</b> and <b>games</b>. I believe in the power of
+            persistence and truth. I <b>graduated</b> from Savonia University of
+            Applied Sciences in 2023 as a <b> Bachelor of Engineering </b>with
+            <b>Degree Programme in Information Technology </b>
+          </p>
+        </section>
+
+        <section>
+          <h2>What I Do:</h2>
+          <p>
+            In this space, I try to <b>gather together everything i do</b>.
+            Through my work, I aim to get better at coding and some day i might
+            create something valuable.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why I Do It:</h2>
+          <p>
+            My journey began when i was in elementary school and one of my
+            teachers started teaching about computers. I really enjoyed it and
+            started to learn coding. Since then, I've been
+            <b>developing my skills</b>
+            and gotten a bit better. <b>I'm fueled</b> by the constant
+            <b>puzzles</b> i have to solve. Some puzzles are easy to solve, and
+            others not so much. But the <b>satisfaction</b> after solving a hard
+            one, is like the best.
+          </p>
+        </section>
+
+        <section>
+          <h2>Let's Connect:</h2>
+          <p>
+            <b>I'd love to hear from you!</b> Whether you have questions,
+            feedback, or just want to chat, <b>don't hesitate</b> to
+            <a href="/contact/index.html">get in touch</a>. Let's embark on this
+            journey together and learn from each other.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          <b>Thank you</b> for stopping by, and I hope you
+          <b>find something useful</b> from my website. Maybe you like to
+          <b> browse my projects, or what i have been up to recently </b>, no
+          matter what it is, i hope you find what you are looking for.
+        </p>
+        <hr />
+        <p>
+          Maybe <b>checkout</b> my
+          <a href="/projects/index.html">projects</a> page next! There you might
+          find something of interest.
+        </p>
+        <br />
+        <br />
+      </footer>
+
+      <p></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz Game</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <header>
+        <h1>Coding challenges #2 JavaScript Quiz Game</h1>
+        <p>
+          This one was a blast. I really liked to make this one. I updated this
+          project after the video for my son. Now it is a timestable game.
+        </p>
+      </header>
+      <main>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/JPQcFRecjFY"
+          title="JavaScript Visa Peli - Koodaus Haasteet Osa 2"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>What i learned</h2>
+        <p>
+          I developed my skills further with plain JavaScript. I learned to
+          create elements dynamically with document.createElement("div");. I
+          also learned more about waits and transitions in css.
+        </p>
+        <code>
+          setTimeout(() => { //function() el.style.opacity = 1; }, 400); });
+        </code>
+      </main>
+      <footer>
+        You can checkout my code from GitHub using this
+        <a href="https://github.com/Penna221/JavaScript_Quiz_Game">link</a>.
+      </footer>
+    </div>
+  </body>
+</html>

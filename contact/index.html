@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <main>
+        <section>
+          <h1>Contact</h1>
+          <p>
+            You can contact me with email.
+            <a href="mailto:juho.matias.pennanen@gmail.com">
+              juho.matias.pennanen@gmail.com
+            </a>
+          </p>
+          <p>Here are some links for my socials:</p>
+          <ul aria-label="Links">
+            <li>
+              <a href="https://www.linkedin.com/in/juho-pennanen-a63930299/">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Penna221"> GitHub </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCRDHTKI4CdWruExooizDMRw"
+              >
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
