@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+
+    <div class="center">
+      <header>
+        <h1>Snake with javaScript</h1>
+        <p>
+          This is a simple snake game i made long ago with javascript. 
+        </p>
+        <a href="https://github.com/Penna221/Snake_JavaScript"
+          >GitHub project</a
+        >
+      </header>
+      <main>
+
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

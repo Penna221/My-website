@@ -80,3 +80,6 @@ code {
   content: "\2705";
   color: greenyellow;
 }
+img {
+  padding: 2%;
+}
