@@ -30,7 +30,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
 }
 .navbar a:hover {
   background-color: #ddd; /* Background color of the links on hover */
@@ -82,4 +82,13 @@ code {
 }
 img {
   padding: 2%;
+  max-width: 50%;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+.block{
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow: hidden;
 }

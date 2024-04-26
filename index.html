@@ -14,40 +14,48 @@
         .then((html) => (document.getElementById("navbar").innerHTML = html));
     </script>
     <div class="center">
-      <header>
-        <h1>Hello! Welcome to my website!</h1>
-        <p>
-          I am Juho Pennanen, also known as
-          <b>(insert cool coder name here)</b>. Checkout my
-          <b>about</b>
-          page for more info.
-        </p>
-        <p>
-          I make games and other stuff. I'm not very good at it, but i try.
-          Currently i have not made any <b>"publish worthy"</b> games. If i ever
-          happen to finish any of them and somehow be pleased with results, i
-          might put them here.
-        </p>
-        <p>
-          I am also part of a choir. I like to sing... Not much to tell about
-          that.
-        </p>
-        <p>
-          Sometimes i also do some random crafting, like <b>book binding</b> and
-          stuff. Not very often but when i do, they are like little projects,
-          day or two.
-        </p>
-      </header>
+      <h1>Hi there! I'm Juho Pennanen.</h1>
+        <header style="display: flex;">
+          <div class="block">
+            <img src="/about/rajattu.jpg" class="left"/>
+            
+            <ul aria-label="Skills" class="left">
+              <li> <b>Java</b></li>
+              <li> JavaScript</li>
+              <li> ReactJS</li>
+              <li> C#</li>
+              <li> Cypress</li>
+              <li> Selenium</li>
+            </ul>
+            <ul aria-label="Concepts" class="left">
+              <li> Model View Controller</li>
+              <li> <b>Automation Testing</b></li>
+              <li> Front-end / Back-end</li>
+            </ul>
+            <ul aria-label="Hobbies"class="left">
+              <li> Youtube</li>
+              <li> Indie Game Development</li>
+              <li> Choir</li>
+              <li> Hiking</li>
+            </ul>
+          </div>
+        </header>
+    </div>
       <hr />
       <main>
+        <section>
+          <h2>Currently Working on:</h2>
+          <p>Coding Challenges #4</p>
+          <p>This website...</p>
+        </section>
+        <hr>
+        <section>
         <ul aria-label="Latest">
           <li> 25.04.2024 - Create this website</li>
           <li>
             28.02.2024 -
-            <a href="/projects/youtube/react_moviedb.html"
-              >Coding challenges #3</a
-            >
-            video
+            <a href="/projects/youtube/react_moviedb.html">Coding challenges #3 video</a>
+            
           </li>
           <li>
             19.02.2024 -
@@ -63,6 +71,7 @@
           </li>
           <li> 06.02.2024 - Started Coding Challenges project</li>
         </ul>
+      </section>
       </main>
     </div>
   </body>
