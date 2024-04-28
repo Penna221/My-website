@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking trip to Kevo 2024</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+    <div class="center">
+      <header>
+        <h1>Hike to Kevo Finland</h1>
+        You can find more info about the trip <a href="https://www.kuopionseurakunnat.fi/tuomiokirkkoseurakunta/nuoret-ja-opiskelijat/vaellus">here</a>!</p>
+        <p>Duration: 19.06.2024 - 26.06.2024</p>
+        <p>Length: 86 km.</p>
+      </header>
+      <main>
+        <h2>Post 28.04.2024</h2>
+        <p>Hi! I am planning on joining a group of other hikers for a trip to Kevo. It is supposed to happen in June. I am really <b>excited</b>!
+             I have never been on this kind of hiking trip. Well, maybe in the army back in year 2018.
+              My friend Joona introduced me to this idea of joining this group. Currently i have 52 days to train myself to a hiker that has the strength for 5 or 6 days of hiking. </p>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+  </body>
+</html>

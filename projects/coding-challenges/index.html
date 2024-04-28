@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenges</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("/elements/navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+    <div class="center">
+        <h1>Coding Challenges</h1>
+        <p>I am making a <b>video series</b> about learning different <b>coding languages</b>.
+             I am <b>approaching</b> that idea by firstly selecting a coding language by <b>random</b>, and then attaching a small <b>challenge</b> to it.
+            You can watch a project <b>introduction</b> from <a href="https://youtu.be/Fwt28WiwtrY">here</a>!</p>
+        <p>You can <b>comment on the videos</b> to give me <b>feedback</b> or new ideas, <b>or just say hi!</b></p>
+        <div class="list">
+            <div class="listHeader">Coding languages to come</div>
+            <li class="done">JavaScript</li>
+            <li class="done">Java</li>
+            <li class="done">ReactJS</li>
+            <li>Ruby</li>
+            <li>Kotlin</li>
+            <li>NodeJS</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>C#</li>
+        </div>
+        <div class="list">
+            <div class="listHeader">Done</div>
+            <li>
+                <a href="/projects/coding-challenges/javafx_calculator.html">
+                  Simple JavaFX Calculator
+                </a>
+              </li>
+              <li>
+                <a href="/projects/coding-challenges/javascript_quiz.html">
+                  JavaScript Quiz Game
+                </a>
+              </li>
+              <li>
+                <a href="/projects/coding-challenges/react_moviedb.html">
+                  ReactJS Movie DB app
+                </a>
+              </li>
+        </div>
+    </div>
+  </body>
+</html>

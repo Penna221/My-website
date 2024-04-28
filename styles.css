@@ -87,8 +87,33 @@ img {
   width: auto;
   height: auto;
 }
+.rounded{
+  border-radius: 20%;
+}
 .block{
   padding-left: 4px;
   padding-right: 4px;
   overflow: hidden;
+}
+.listHeader{
+  color: greenyellow;
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: -5px;
+}
+.list{
+  padding-bottom: 20px;
+}
+.highlight::before{
+  content: " \2606  ";
+  animation: colorChange 2s infinite;
+}
+.highlight::after{
+  content: " \2606  ";
+  animation: colorChange 2s infinite;
+}
+@keyframes colorChange {
+  0% { color: blue; } /* Start color */
+  50% { color: red; } /* Intermediate color */
+  100% { color: blue; } /* End color */
 }
